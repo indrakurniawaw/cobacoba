@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
         body: ListView(
           children: [
             Image.network(
-              'https://www.petanikode.com/img/flutter/flutter.png',
+              'aa.jpg',
               width: 600,
               height: 240,
               fit: BoxFit.cover,
@@ -99,6 +100,8 @@ Widget textSection = const Padding(
     softWrap: true,
   ),
 );
+
+
 // Color color = Theme.of(context).primaryColor;
 
 // Widget buttonSection = Row(
